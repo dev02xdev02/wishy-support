@@ -15,12 +15,7 @@
           Oxygen, Ubuntu, Cantarell, sans-serif;
         line-height: 1.6;
         color: #333;
-        background: linear-gradient(
-          135deg,
-          #4d91ff 0%,
-          #cd74ff 50%,
-          #01dde3 100%
-        );
+        background: linear-gradient(135deg, #FFF5F0 0%, #E8F4FF 100%);
         min-height: 100vh;
         padding: 20px;
       }
@@ -47,13 +42,16 @@
         margin-top: 30px;
         margin-bottom: 15px;
         padding-bottom: 10px;
-        border-bottom: 2px solid #4d91ff;
+        border-bottom: 2px solid;
+        border-image: linear-gradient(90deg, #4d91ff 0%, #cd74ff 50%, #01dde3 100%) 1;
       }
       .contact-box {
-        background: #f8f9fa;
-        padding: 20px;
-        border-radius: 10px;
+        background: linear-gradient(135deg, #4d91ff 0%, #cd74ff 50%, #01dde3 100%);
+        color: white;
+        padding: 25px;
+        border-radius: 15px;
         margin: 20px 0;
+        box-shadow: 0 8px 20px rgba(77, 145, 255, 0.3);
       }
       .contact-item {
         margin: 15px 0;
@@ -62,8 +60,9 @@
         gap: 10px;
       }
       .contact-item strong {
-        color: #4d91ff;
+        color: white;
         min-width: 80px;
+        font-weight: 600;
       }
       a {
         color: #4d91ff;
@@ -75,8 +74,9 @@
       .faq-item {
         margin: 20px 0;
         padding: 15px;
-        background: #f8f9fa;
+        background: #f0f7ff;
         border-radius: 8px;
+        border-left: 4px solid #4d91ff;
       }
       .faq-question {
         font-weight: bold;
@@ -105,11 +105,7 @@
       <div class="contact-box">
         <div class="contact-item">
           <strong>Email:</strong>
-          <a href="mailto:developers@x-verse.de">developers@x-verse.de</a>
-        </div>
-        <div class="contact-item">
-          <strong>Telefon:</strong>
-          <a href="tel:+4912345678">+49 123 45678</a>
+          <a href="mailto:developers@x-verse.de" style="color: white; text-decoration: underline;">developers@x-verse.de</a>
         </div>
       </div>
       <p>Wir antworten in der Regel innerhalb von 24 Stunden.</p>
